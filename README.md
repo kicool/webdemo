@@ -1,27 +1,19 @@
-webdemo
-=======
+#webdemo
+See [nick ye's blog](http://www.cnblogs.com/yjf512/archive/2012/09/03/2668384.html)
 
-webdemo
+##Requirment
+- MySQL
+- mymysql 
+ - $go get github.com/ziutek/mymysql/thrsafe
+ - $go get github.com/ziutek/mymysql/autorc
+ - $go get github.com/ziutek/mymysql/godrv
 
-目录结构：
+##Build
+- $cd {webdemo_root}
+- $go build -o webdemo src/webdemo/*.go 
 
-bin
-
-etc //存放sql建表语句
-
-pkg 
-
-src //源代码
-
-template //js，css，模板存放地址
-
-
-运行条件：
-
-1 搭建go环境，复制代码到gopath
-
-2 搭建mysql数据库
-
-3 修改ajaxController中#36行关于mysql的数据库
-
-4 在template的父级目录运行服务
+##鐩綍
+- README.md
+- etc	        //create SQL table
+- src	       	//go codes
+- template      //static files: js, css, html template
