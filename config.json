@@ -1,0 +1,7 @@
+{
+	"Host": "localhost:3306",
+	"Port": "3306",
+	"User": "root",
+	"Pass": "381211381211",
+	"DBName": "webdemo"
+}

@@ -33,7 +33,7 @@ func (this *ajaxController) LoginAction(w http.ResponseWriter, r *http.Request) 
 		return
 	}
 
-	db := mysql.New("tcp", "", "192.168.100.166", "root", "test", "webdemo")
+	db := mysql.New("tcp", "", cfg.Host, cfg.User, cfg.Pass, cfg.DBName)
 	if err := db.Connect(); err != nil {
 		log.Println(err)
 		OutputJson(w, 0, "数据库操作失败", nil)
