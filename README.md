@@ -11,6 +11,7 @@ See [nick ye's blog](http://www.cnblogs.com/yjf512/archive/2012/09/03/2668384.ht
 ##Build
 - $cd {webdemo_root}
 - $go build -o webdemo src/webdemo/*.go 
+- config database with right user/pwd, and init by using {webdemo_root}/etc/*.sql
 
 ##目录
 - README.md
