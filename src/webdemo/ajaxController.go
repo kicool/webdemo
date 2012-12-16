@@ -47,6 +47,11 @@ func (this *ajaxController) LoginAction(w http.ResponseWriter, r *http.Request) 
 		OutputJson(w, 0, "数据库操作失败", nil)
 		return
 	}
+	if len(rows) == 0 {
+		log.Println("no user:", admin_name)
+		OutputJson(w, 0, "该用户不存在", nil)
+		return
+	}
 
 	name := res.Map("admin_password")
 	admin_password_db := rows[0].Str(name)
